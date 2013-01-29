@@ -1,0 +1,15 @@
+function Expand(obj)
+{
+	var elmnt = document.getElementById(obj);
+	
+	if(elmnt.style.visibility == "hidden")
+	{
+		elmnt.style.visibility = "visible";
+	}
+	
+	else
+	{
+		elmnt.style.visibility = "hidden";
+	}
+		
+}

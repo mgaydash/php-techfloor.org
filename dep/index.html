@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+	<title>
+		TechFloor.org
+	</title>
+	
+	<script type="text/javascript" src="../js/tfJs.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="../js/randImgPlugin.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/tfCss.css" />
+	<link rel="stylesheet" type="text/css" href="../css/menu.css" />
+	
+	<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			$('#nav').load('../view/menuInj.html');
+			$('#titleBox').load('../view/titleInj.html');
+			$('#footer').load('../view/footerInj.html');
+			
+			$('.shuffle').randomImage();
+		}
+	);
+	</script>
+</head>
+
+<body>
+	<div id="mainBox">
+		<div id="titleBox">
+			<!--jQuery injected content here-->
+		</div>
+
+		<div id="secondBox">
+			<div id="nav">
+				<!--jQuery injected content here-->
+			</div>
+
+			<div id="pageContent">
+				<div class="pageTitle">
+					Welcome to TechFloor!
+				</div>
+				
+				<div class="textFormat">
+				<h3>Welcome!</h3>
+				This site contains information about our group and the many projects we as a group have provided for 
+				Clarion University. If you have any questions or comments please feel free to contact us or join in 
+				on the public discussion of projects at meetings and on our forum. If you are interested in 
+				becoming a member or simply wish to learn more about the group you can join us every Thursday at 
+				7:30 P.M. in room 10 Nair.
+
+				Enter at the North Campus Desk. The North Area Desk is located in Nair Hall. Walk straight down the
+				hall past the elevators, through the rec room double doors and then hang a right. You will see the 
+				techfloor sign on the door and the number '10' on the door in front of you. That's us! Saturdays 
+				there is usually a LAN party often mixed with project development and there is no need to bring your 
+				own computer, we have plenty to go around. You can click on the TechCam link to your left and if 
+				the lights are on we are there, feel free to join us. We won't bite.
+				
+				<h3>Keep in mind, we are UNDER CONSTRUCTION</h3>
+				<img class="shuffle" src="" alt="" />
+				</div>
+			</div>
+		</div> 
+		
+		<div id="footer">
+			<!--jQuery injected content here-->
+		</div>
+	</div>
+</body>
+</html>
