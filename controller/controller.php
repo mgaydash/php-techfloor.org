@@ -44,6 +44,9 @@ switch ($action) {
 	case "membersPage":
 		include("../view/members.php");
 		break;
+	case "magic":
+		include("../view/magic.php");
+		break;
 	case "projectsPage":
 		include("../view/projects.php");
 		break;
