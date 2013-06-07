@@ -6,18 +6,24 @@
 		<title>
 			<?php echo("$pageTitle"); ?>
 		</title>
-		<!--<link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.8.23.custom.css"/>-->
 		<link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.9.0.custom.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/tfCss.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/clippy.css" media="all">
 		<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
-		<!--<script type="text/javascript" src="../js/jquery-ui-1.8.23.custom.min.js"></script>-->
 		<script type="text/javascript" src="../js/jquery-ui-1.9.0.custom.min.js"></script>
 		<script type="text/javascript" src="../js/tf.ajaxForm.js"></script>
+		<script src="../js/clippy/clippy.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function(){
 				jQuery("body").addMemberForm({
 					openButtonSel: "#tf_addMemberBtn"
+				});
+				
+				clippy.load('Clippy', function(agent) {
+					// Do anything with the loaded agent
+					agent.moveTo($("#titleBox").offset().left + 780, 20);
+					agent.show();
 				});
 			});
 		</script>
