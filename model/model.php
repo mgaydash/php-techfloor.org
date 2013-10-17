@@ -22,7 +22,7 @@ function applyTeam($lolForm){
 	return $status;
 }
 function getDBConnection(){
-	$dsn = 'mysql:host=localhost;dbname=techfloor';
+	$dsn = 'mysql:host=techfloor.db.11903965.hostedresource.com;dbname=techfloor';
 	$username = 'techfloor';
 	$password = 'Password99!';
 	$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
