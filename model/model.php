@@ -23,8 +23,8 @@ function applyTeam($lolForm){
 }
 function getDBConnection(){
 	$dsn = 'mysql:host=localhost;dbname=techfloor';
-	$username = 'root';
-	$password = 'smelt3r';
+	$username = 'techfloor';
+	$password = 'Password99!';
 	$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 	$db = new PDO($dsn, $username, $password, $options);
 	return $db;
