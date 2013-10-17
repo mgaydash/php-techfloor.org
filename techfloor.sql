@@ -1,20 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 2.11.11.3
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 29, 2012 at 07:13 PM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+-- Host: 50.63.224.120
+-- Generation Time: Oct 17, 2013 at 04:41 PM
+-- Server version: 5.0.96
+-- PHP Version: 5.1.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `techfloor`
@@ -26,14 +19,14 @@ SET time_zone = "+00:00";
 -- Table structure for table `lolPlayer`
 --
 
-CREATE TABLE IF NOT EXISTS `lolPlayer` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `lolPlayer` (
+  `id` int(11) NOT NULL auto_increment,
   `email` varchar(256) NOT NULL,
   `name` varchar(256) NOT NULL,
   `sname` varchar(256) NOT NULL,
-  `tId` int(11) DEFAULT NULL,
-  `wins` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `tId` int(11) default NULL,
+  `wins` int(11) default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
 
 -- --------------------------------------------------------
@@ -42,11 +35,11 @@ CREATE TABLE IF NOT EXISTS `lolPlayer` (
 -- Table structure for table `lolTeam`
 --
 
-CREATE TABLE IF NOT EXISTS `lolTeam` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `lolTeam` (
+  `id` int(11) NOT NULL auto_increment,
   `name` varchar(256) NOT NULL,
   `pw` varchar(256) NOT NULL,
-  PRIMARY KEY (`id`),
+  PRIMARY KEY  (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
@@ -56,14 +49,12 @@ CREATE TABLE IF NOT EXISTS `lolTeam` (
 -- Table structure for table `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL auto_increment,
   `fName` varchar(256) NOT NULL,
   `lName` varchar(256) NOT NULL,
   `email` varchar(256) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+  `summoner` varchar(50) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
